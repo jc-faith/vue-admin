@@ -1,42 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff165a5a-c2df-4e48-b5c0-1b246ad0ab7c" name="Default Changelist" comment="实现国际化">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo_kitty_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo_kitty_blue2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo_kitty_color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo_kitty_green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/user2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/zh.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/interface.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mock/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mock/modules/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mock/modules/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mock/modules/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/dept.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/error/404.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/log.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/menu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/role.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/user.vue" afterDir="false" />
+    <list default="true" id="ff165a5a-c2df-4e48-b5c0-1b246ad0ab7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ThemePicker/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -83,6 +52,21 @@
       <recent name="E:\study\VUE\vue-admin\src\views" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="et" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/node_modules/.bin/et" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/node_modules/.bin" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.et" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -109,7 +93,7 @@
       <workItem from="1577154897398" duration="1753000" />
       <workItem from="1577156733157" duration="1684000" />
       <workItem from="1577164297893" duration="8956000" />
-      <workItem from="1577236953804" duration="1981000" />
+      <workItem from="1577236953804" duration="7384000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1577154430929</created>
@@ -118,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577154430929</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="实现国际化">
+      <created>1577238964095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577238964095</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,10 +121,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="实现国际化" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="318" y="10" key="CommitChangelistDialog2" timestamp="1577238906811">
+    <state x="318" y="10" key="CommitChangelistDialog2" timestamp="1577238960205">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="318" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577238906811" />
+    <state x="318" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577238960205" />
     <state width="1330" height="198" key="GridCell.Tab.0.bottom" timestamp="1577179824766">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -150,10 +141,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1330" height="198" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577179824766" />
-    <state x="307" y="149" key="Vcs.Push.Dialog.v2" timestamp="1577154457423">
+    <state x="307" y="149" key="Vcs.Push.Dialog.v2" timestamp="1577238978954">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="307" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577154457423" />
+    <state x="307" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577238978954" />
     <state x="445" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1577169465805">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
