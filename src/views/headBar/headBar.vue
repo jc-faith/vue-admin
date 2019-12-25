@@ -1,13 +1,13 @@
 <template>
-  <div class="container">
-    <!-- 导航菜单隐藏显示切换 -->
-    <span class="collapse-switcher" @click.prevent="collapse">
-      <i class="el-icon-menu"></i>
+  <div class="container" :class="$store.state.app.collapse?'menu-bar-collapse-width':'menu-bar-width'" :style="{'background':$store.state.app.themeColor}">
+    <!-- 导航收缩 -->
+    <span class="hamburger-container" :style="{'background':$store.state.app.themeColor}">
+      <Hamburger :toggleClick="collapse" :isActive="$store.state.app.collapse"></Hamburger>
     </span>
     <!-- 导航菜单 -->
     <span class="nav-bar">
-      <el-menu :default-active="activeIndex" class="el-menu-demo" text-color="#fff"
-               active-text-color="#ffd04b" mode="horizontal" @select="selectNavBar()">
+      <el-menu :default-active="activeIndex" class="el-menu-demo" :style="{'background':$store.state.app.themeColor}"
+               text-color="#fff" active-text-color="#ffd04b" mode="horizontal" @select="selectNavBar()">
         <el-menu-item index="1" @click="$router.push('/')">{{$t("common.home")}}</el-menu-item>
         <el-menu-item index="2">{{$t("common.doc")}}</el-menu-item>
         <el-menu-item index="3">{{$t("common.msgCenter")}}</el-menu-item>
@@ -15,7 +15,7 @@
     </span>
     <span class="tool-bar">
       <!-- 主题切换 -->
-      <ThemePicker class="theme-picker"></ThemePicker>
+      <ThemePicker class="theme-picker" @onThemeChange="onThemeChange"></ThemePicker>
       <!-- 语言切换 -->
       <LangSelector class="lang-selector"></LangSelector>
       <!-- 用户信息 -->
@@ -32,16 +32,18 @@
 </template>
 
 <script>
+  import mock from "@/mock/index.js";
+  import Hamburger from "@/components/Hamburger"
   import ThemePicker from "@/components/ThemePicker"
   import LangSelector from "@/components/LangSelector"
   export default {
     components:{
+      Hamburger,
       ThemePicker,
       LangSelector
     },
     data() {
       return {
-        isCollapse: false,
         username: "Louis",
         userAvatar: "",
         activeIndex: '1'
@@ -51,17 +53,13 @@
       selectNavBar(key, keyPath) {
         console.log(key, keyPath)
       },
-      // 语言切换
-      handleCommand(command) {
-        let array = command.split(':')
-        let lang = array[0] === '' ? 'zh_cn' : array[0]
-        let label = array[1]
-        document.getElementById("language").innerHTML = label
-        this.$i18n.locale = lang
-      },
       //折叠导航栏
       collapse: function() {
-        this.isCollapse = !this.isCollapse;
+        this.$store.commit('collapse');
+      },
+      //切换主题
+      onThemeChange(themeColor,oldThemeColor){
+        this.$store.dispatch('onThemeChange',{themeColor,oldThemeColor})
       },
       //退出登录
       logout: function() {
@@ -95,17 +93,17 @@
     right: 0px;
     height: 60px;
     line-height: 60px;
-    .collapse-switcher {
+    background: #545c64;
+    .hamburger-container {
       width: 40px;
       float: left;
-      cursor: pointer;
-      border-color: rgba(111, 123, 131, 0.8);
+      border-color: rgba(80, 124, 133, 0.747);
       border-left-width: 1px;
       border-left-style: solid;
       border-right-width: 1px;
       border-right-style: solid;
       color: white;
-      background: #504e6180;
+      background: #545c64;
     }
     .nav-bar {
       margin-left: auto;
@@ -139,5 +137,11 @@
         }
       }
     }
+  }
+  .menu-bar-width {
+    left: 200px;
+  }
+  .menu-bar-collapse-width {
+    left: 65px;
   }
 </style>

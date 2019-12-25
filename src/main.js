@@ -6,16 +6,17 @@ import 'element-ui/lib/theme-chalk/index.css'
 import Mock from '@/mock/index'
 import api from '@/http/index'
 import i18n from './i18n'
+import store from './store/index'
 
 Vue.use(elementUI)
 Vue.use(api)
 Vue.config.productionTip = false
+console.log(store);
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   i18n,
-  components: { App },
-  template: '<App/>'
+  store,
+  render:h=>h(App)
 })

@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff165a5a-c2df-4e48-b5c0-1b246ad0ab7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LangSelector/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/headBar/headBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/menuBar/menuBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BreadCrumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Hamburger/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/modules/AppStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/dept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sys/dept.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ThemePicker/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemePicker/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/headBar/headBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/headBar/headBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/log.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sys/log.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sys/menu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/role.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sys/role.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sys/user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/main/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/menuBar/menuBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/menuBar/menuBar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <workItem from="1577154897398" duration="1753000" />
       <workItem from="1577156733157" duration="1684000" />
       <workItem from="1577164297893" duration="8956000" />
-      <workItem from="1577236953804" duration="8949000" />
+      <workItem from="1577236953804" duration="14714000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1577154430929</created>
@@ -127,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577254986631</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="功能组件封装">
+      <created>1577256759387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577256759387</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,13 +143,14 @@
     <MESSAGE value="项目初始化" />
     <MESSAGE value="实现国际化" />
     <MESSAGE value="更换皮肤主题" />
-    <option name="LAST_COMMIT_MESSAGE" value="更换皮肤主题" />
+    <MESSAGE value="功能组件封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="功能组件封装" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="318" y="10" key="CommitChangelistDialog2" timestamp="1577254984359">
+    <state x="318" y="10" key="CommitChangelistDialog2" timestamp="1577256756463">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="318" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577254984359" />
+    <state x="318" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577256756463" />
     <state width="1330" height="198" key="GridCell.Tab.0.bottom" timestamp="1577179824766">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -160,10 +167,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1330" height="198" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577179824766" />
-    <state x="307" y="149" key="Vcs.Push.Dialog.v2" timestamp="1577254995766">
+    <state x="307" y="149" key="Vcs.Push.Dialog.v2" timestamp="1577256772791">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="307" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577254995766" />
+    <state x="307" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577256772791" />
     <state x="445" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1577169465805">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
