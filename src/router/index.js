@@ -3,12 +3,12 @@ import VueRouter  from 'vue-router'
 import login from '@/views/login'
 import home from '@/views/home'
 import NotFound from '@/views/error/404'
-import main from '@/views/main'
-import user from '@/views/user'
-import menu from '@/views/menu'
-import dept from '@/views/dept'
-import role from '@/views/role'
-import log from '@/views/log'
+import main from '@/views/main/main'
+import user from '@/views/sys/user'
+import menu from '@/views/sys/menu'
+import dept from '@/views/sys/dept'
+import role from '@/views/sys/role'
+import log from '@/views/sys/log'
 
 Vue.use(VueRouter)
 
